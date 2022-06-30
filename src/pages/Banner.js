@@ -16,11 +16,13 @@ const Banner = () => {
        }}>
             <div class="hero">
             <div class="hero-content flex-col lg:flex-row-reverse">
-               <div>
+               <div data-aos="fade-left" data-aos-duration="2000">
                <img src={banner} class="max-w-sm rounded-lg shadow-2xl" />
                </div>
 
-                <div className='text-white w-3/5'>
+                <div className='text-white w-3/5' data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000">
                 <h3 className='text-2xl pb-4'>Deep Thinking</h3>
                 <h1 class="text-5xl font-bold">Professional Meditation Services!</h1>
                 <p class="py-6 w-4/5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
