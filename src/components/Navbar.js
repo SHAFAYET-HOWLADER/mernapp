@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = ({children}) => {
   return (
-    <div class="drawer drawer-end">
+    <div class="drawer drawer-end fixed top-0">
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
     <div class="drawer-content flex flex-col">
-      <div class="w-full navbar bg-primary-focus">
+      <div class="w-full navbar">
         <div class="flex-1 px-2 mx-2">
-        <NavLink to='/home'>  
-        <a className='text-white'>Clean Co</a></NavLink>
+        <NavLink to='/'>  
+        <a className='text-black'>Free Thought</a></NavLink>
         </div>
         <div class="flex-none lg:hidden">
           <label for="my-drawer-3" class="btn btn-square btn-ghost">
@@ -19,19 +19,19 @@ const Navbar = ({children}) => {
         <div class="flex-none hidden lg:block">
           <ul class="menu menu-horizontal pt-2">
           <NavLink to='/'>
-            <a className='btn btn-sm btn-primary ml-5'>Home</a>
+            <a className='btn btn-sm  ml-5'>Home</a>
           </NavLink>
-            <NavLink to='/service'><a className='btn btn-sm  btn-primary ml-5'>Service</a></NavLink>
+            <NavLink to='/service'><a className='btn btn-sm   ml-5'>Service</a></NavLink>
             <NavLink to='/about'>
-              <a className='btn btn-sm btn-primary ml-5'>About</a>
+              <a className='btn btn-sm  ml-5'>About</a>
             </NavLink>
             <NavLink to='/login'>
-              <a className='btn btn-sm btn-primary ml-5'>
+              <a className='btn btn-sm  ml-5'>
                 Login
               </a>
             </NavLink>
             <NavLink to='/contact'>
-            <a className='btn btn-sm btn-primary ml-5'>
+            <a className='btn btn-sm  ml-5'>
               Contact
             </a>
             </NavLink>
@@ -56,19 +56,19 @@ const Navbar = ({children}) => {
       <label for="my-drawer-3" class="drawer-overlay"></label> 
       <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
       <NavLink to='/'>
-            <a className='btn btn-sm btn-primary mb-5'>Home</a>
+            <a className='btn btn-sm mb-5'>Home</a>
           </NavLink>
-            <NavLink to='/service'><a className='btn btn-sm  btn-primary mb-5'>Service</a></NavLink>
+            <NavLink to='/service'><a className='btn btn-sm   mb-5'>Service</a></NavLink>
             <NavLink to='/about'>
-              <a className='btn btn-sm btn-primary mb-5'>About</a>
+              <a className='btn btn-sm  mb-5'>About</a>
             </NavLink>
             <NavLink to='/login'>
-              <a className='btn btn-sm btn-primary mb-5'>
+              <a className='btn btn-sm  mb-5'>
                 Login
               </a>
             </NavLink>
             <NavLink to='/contact'>
-            <a className='btn btn-sm btn-primary mb-5'>
+            <a className='btn btn-sm  mb-5'>
               Contact
             </a>
             </NavLink>

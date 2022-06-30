@@ -1,10 +1,10 @@
 import React from 'react'
+import Banner from '../Banner'
 
 const Home = () => {
   return (
     <div>
-      Home
-      <button className='btn btn-sm btn-primary'>button</button>
+        <Banner/>
     </div>
 
   )
